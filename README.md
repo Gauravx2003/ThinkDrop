@@ -118,10 +118,5 @@ The application is designed to be deployed on platforms like Vercel or Netlify:
 4. Push to the branch
 5. Open a Pull Request
 
-## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Support
-
-For support, email support@thinkdrop.com or open an issue in the repository.
