@@ -30,7 +30,7 @@ const nextConfig: NextConfig = {
 };
 
 // Make sure adding Sentry options is the last code to run before exporting
-module.exports = withSentryConfig(nextConfig, {
+export default withSentryConfig(nextConfig, {
   org: "gaurav-0a",
   project: "javascript-nextjs",
   // Only print logs for uploading source maps in CI
@@ -52,4 +52,4 @@ module.exports = withSentryConfig(nextConfig, {
 
 });
 
-export default nextConfig;
+// export default nextConfig;
