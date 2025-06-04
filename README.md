@@ -1,36 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ThinkDrop - Startup Pitch Platform
+
+ThinkDrop is a modern web platform where entrepreneurs can share, discover, and engage with innovative startup ideas. Built with Next.js 14, Sanity CMS, and real-time updates.
+
+![ThinkDrop Platform](public/logo.png)
+
+## Features
+
+- 🚀 **Share Startup Ideas**: Create and publish your startup pitches
+- 👥 **User Profiles**: Personalized profiles for entrepreneurs
+- 🔍 **Advanced Search**: Find startups by category or keyword
+- 📊 **Real-time Analytics**: Track views and engagement
+- 🎨 **Modern UI/UX**: Beautiful, responsive design with Tailwind CSS
+- 🔐 **Secure Authentication**: GitHub authentication integration
+- 📝 **Rich Content Editor**: Markdown support for detailed pitches
+
+## Tech Stack
+
+- **Frontend**: Next.js 14, React 19, Tailwind CSS
+- **Backend**: Sanity CMS
+- **Authentication**: NextAuth.js
+- **Database**: Sanity.io
+- **Styling**: Tailwind CSS, Lucide Icons
+- **Content**: MDEditor, Markdown Support
+- **Monitoring**: Sentry
+- **Type Safety**: TypeScript
 
 ## Getting Started
 
-First, run the development server:
-
+1. **Clone the repository**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd thinkdrop
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install dependencies**
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Environment Setup**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env` file in the root directory with:
+```env
+NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id
+NEXT_PUBLIC_SANITY_DATASET=production
+SANITY_WRITE_TOKEN=your_write_token
+GITHUB_ID=your_github_id
+GITHUB_SECRET=your_github_secret
+```
 
-## Learn More
+4. **Run the development server**
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+5. **Build for production**
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+thinkdrop/
+├── app/                   # Next.js app directory
+│   ├── (root)/           # Main application routes
+│   ├── api/              # API routes
+│   └── studio/          # Sanity Studio
+├── components/           # React components
+├── lib/                  # Utility functions
+├── public/              # Static assets
+└── sanity/              # Sanity configuration
+```
 
-## Deploy on Vercel
+## Key Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### For Entrepreneurs
+- Create detailed startup pitches
+- Track engagement metrics
+- Build professional profiles
+- Connect with potential investors
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### For Visitors
+- Discover innovative startups
+- Filter by categories
+- Real-time updates
+- Engage with founders
+
+## Authentication
+
+The platform uses GitHub authentication through NextAuth.js. Users can:
+- Sign in with GitHub
+- Create and manage profiles
+- Access protected features
+
+## Content Management
+
+Sanity CMS powers the content infrastructure:
+- Real-time updates
+- Structured content
+- Rich text editing
+- Asset management
+
+## Deployment
+
+The application is designed to be deployed on platforms like Vercel or Netlify:
+
+1. Connect your repository
+2. Configure environment variables
+3. Deploy automatically
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+
+For support, email support@thinkdrop.com or open an issue in the repository.
