@@ -101,7 +101,7 @@ const ExploreModal: React.FC<ExploreModalProps> = ({ isOpen, onClose }) => {
               return (
                 <Link
                   key={category.name}
-                  href={`/category/${category.name}`}
+                  href={`/category/${category.name.toLowerCase()}`}
                   onClick={onClose}
                   className="group"
                 >
