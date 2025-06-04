@@ -61,6 +61,7 @@ const workSans = localFont({
 export const metadata: Metadata = {
   title: "ThinkDrop",
   description: "Think ideads, Drop here",
+  
 };
 
 export default function RootLayout({
